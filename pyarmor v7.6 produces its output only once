@@ -1,0 +1,142 @@
+I am working with pyarmor v7.6 and an application written with python 2.7.
+We have not purcheased the last pyarmor version because it did not work.
+The version 7.6 instead seemed work properly.
+When trying to obfuscate our application anything seems OK but instead of producing a new version of
+dist directory, pyarmor reproduces the old one.
+This is the report of the Obfuscate script:
+
+* Copy new Files in /home/linaro/PyEQ/PySRC, then press <CR>.
+Press <CR> to continue
+
+* Deleting old Files ...
+Press <CR> to continue
+
+removed '/home/linaro/PyEQ/PySRC/dist/util.py'
+removed '/home/linaro/PyEQ/PySRC/dist/Page.py'
+removed '/home/linaro/PyEQ/PySRC/dist/Wnd.py'
+removed '/home/linaro/PyEQ/PySRC/dist/cfg.py'
+removed '/home/linaro/PyEQ/PySRC/dist/WinMgr.py'
+removed '/home/linaro/PyEQ/PySRC/dist/Img.py'
+removed '/home/linaro/PyEQ/PySRC/dist/App.py'
+removed '/home/linaro/PyEQ/PySRC/dist/main.py'
+removed '/home/linaro/PyEQ/PySRC/dist/Wid.py'
+removed '/home/linaro/PyEQ/PySRC/dist/pytransform/_pytransform.so'
+removed '/home/linaro/PyEQ/PySRC/dist/pytransform/__init__.py'
+removed directory '/home/linaro/PyEQ/PySRC/dist/pytransform'
+removed '/home/linaro/PyEQ/PySRC/dist/Config.py'
+removed '/home/linaro/PyEQ/PySRC/dist/Machine.py'
+removed directory '/home/linaro/PyEQ/PySRC/dist'
+removed '/home/linaro/PyEQ/EqEXEC/pytransform/_pytransform.so'
+removed '/home/linaro/PyEQ/EqEXEC/pytransform/__init__.py'
+removed directory '/home/linaro/PyEQ/EqEXEC/pytransform'
+removed '/home/linaro/PyEQ/EqEXEC/App.py'
+removed '/home/linaro/PyEQ/EqEXEC/BoardParams200W.sav'
+removed '/home/linaro/PyEQ/EqEXEC/BoardParams90W.sav'
+removed '/home/linaro/PyEQ/EqEXEC/Config.py'
+removed '/home/linaro/PyEQ/EqEXEC/EqConfigBase.ppy'
+removed '/home/linaro/PyEQ/EqEXEC/EqConfigDuckBeack.ppy'
+removed '/home/linaro/PyEQ/EqEXEC/EqConfigEx.ppy'
+removed '/home/linaro/PyEQ/EqEXEC/EqConfigFull.ppy'
+removed '/home/linaro/PyEQ/EqEXEC/EqConfigGar322.ppy'
+removed '/home/linaro/PyEQ/EqEXEC/EqConfigPrint.ppy'
+removed '/home/linaro/PyEQ/EqEXEC/EqConfigTip.ppy'
+removed '/home/linaro/PyEQ/EqEXEC/Img.py'
+removed '/home/linaro/PyEQ/EqEXEC/Machine.py'
+removed '/home/linaro/PyEQ/EqEXEC/Page.py'
+removed '/home/linaro/PyEQ/EqEXEC/RunEQ.sh'
+removed '/home/linaro/PyEQ/EqEXEC/Wid.py'
+removed '/home/linaro/PyEQ/EqEXEC/WinMgr.py'
+removed '/home/linaro/PyEQ/EqEXEC/Wnd.py'
+removed '/home/linaro/PyEQ/EqEXEC/cfg.py'
+removed '/home/linaro/PyEQ/EqEXEC/main.py'
+removed '/home/linaro/PyEQ/EqEXEC/util.py'
+* Copying new Files ...
+Press <CR> to continue
+
+'EqConfigBase.ppy' -> '/home/linaro/PyEQ/EqEXEC/EqConfigBase.ppy'
+'EqConfigDuckBeack.ppy' -> '/home/linaro/PyEQ/EqEXEC/EqConfigDuckBeack.ppy'
+'EqConfigEx.ppy' -> '/home/linaro/PyEQ/EqEXEC/EqConfigEx.ppy'
+'EqConfigFull.ppy' -> '/home/linaro/PyEQ/EqEXEC/EqConfigFull.ppy'
+'EqConfigGar322.ppy' -> '/home/linaro/PyEQ/EqEXEC/EqConfigGar322.ppy'
+'EqConfigPrint.ppy' -> '/home/linaro/PyEQ/EqEXEC/EqConfigPrint.ppy'
+'EqConfigTip.ppy' -> '/home/linaro/PyEQ/EqEXEC/EqConfigTip.ppy'
+'RunEQ.sh' -> '/home/linaro/PyEQ/EqEXEC/RunEQ.sh'
+'BoardParams200W.sav' -> '/home/linaro/PyEQ/EqEXEC/BoardParams200W.sav'
+'BoardParams90W.sav' -> '/home/linaro/PyEQ/EqEXEC/BoardParams90W.sav'
+* Obfuscating python Files ...
+Press <CR> to continue
+
+INFO     PyArmor Version 7.7.4
+INFO     Python 2.7.16
+INFO     Target platforms: Native
+INFO     Source path is "/home/linaro/PyEQ/PySRC"
+INFO     Entry scripts are ['main.py']
+INFO     Use cached capsule /home/linaro/.pyarmor/.pyarmor_capsule.zip
+INFO     Search scripts mode: Normal
+INFO     Save obfuscated scripts to "dist"
+INFO     Read product key from capsule
+INFO     Obfuscate module mode is 2
+INFO     Obfuscate code mode is 1
+INFO     Obfuscate string value is False
+INFO     Wrap mode is 1
+INFO     Restrict mode is 1
+INFO     Advanced value is 0
+INFO     Super mode is False
+INFO     Super plus mode is not enabled
+INFO     Generating runtime files to dist/pytransform
+INFO     Extract pytransform.key
+INFO     Read default license from capsule
+INFO     Copying /home/linaro/.pyarmor/platforms/linux/aarch64/3/_pytransform.so
+INFO     Patch library dist/pytransform/_pytransform.so
+INFO     Patch library file OK
+INFO     Copying /usr/local/lib/python2.7/dist-packages/pyarmor/pytransform.py
+INFO     Rename it to pytransform/__init__.py
+INFO     Generate runtime files OK
+INFO     Start obfuscating the scripts...
+INFO            App.py -> dist/App.py
+INFO            Config.py -> dist/Config.py
+INFO            Img.py -> dist/Img.py
+INFO            Machine.py -> dist/Machine.py
+INFO            Page.py -> dist/Page.py
+INFO            Wid.py -> dist/Wid.py
+INFO            WinMgr.py -> dist/WinMgr.py
+INFO            Wnd.py -> dist/Wnd.py
+INFO            cfg.py -> dist/cfg.py
+INFO            main.py -> dist/main.py
+INFO     Insert bootstrap code to entry script dist/main.py
+INFO            util.py -> dist/util.py
+INFO     Obfuscate 11 scripts OK.
+*********************
+* Obfuscation DONE! *
+*********************
+Press <CR> to continue
+
+* Copying obfuscated Files ...
+Press <CR> to continue
+
+'./dist/App.py' -> '/home/linaro/PyEQ/EqEXEC/App.py'
+'./dist/Config.py' -> '/home/linaro/PyEQ/EqEXEC/Config.py'
+'./dist/Img.py' -> '/home/linaro/PyEQ/EqEXEC/Img.py'
+'./dist/Machine.py' -> '/home/linaro/PyEQ/EqEXEC/Machine.py'
+'./dist/Page.py' -> '/home/linaro/PyEQ/EqEXEC/Page.py'
+'./dist/Wid.py' -> '/home/linaro/PyEQ/EqEXEC/Wid.py'
+'./dist/WinMgr.py' -> '/home/linaro/PyEQ/EqEXEC/WinMgr.py'
+'./dist/Wnd.py' -> '/home/linaro/PyEQ/EqEXEC/Wnd.py'
+'./dist/cfg.py' -> '/home/linaro/PyEQ/EqEXEC/cfg.py'
+'./dist/main.py' -> '/home/linaro/PyEQ/EqEXEC/main.py'
+'./dist/util.py' -> '/home/linaro/PyEQ/EqEXEC/util.py'
+'./dist/pytransform/__init__.py' -> '/home/linaro/PyEQ/EqEXEC/pytransform/__init__.py'
+'./dist/pytransform/_pytransform.so' -> '/home/linaro/PyEQ/EqEXEC/pytransform/_pytransform.so'
+* Testing obfuscated Files ...
+Press <CR> to continue
+
+
+// THE FOLLOWING LINES SHOW THAT CODE RUNS PROPERLY (BUT IS NOT THE ATTENDED ONE)
+
+pygame 2.0.3 (SDL 2.0.9, Python 2.7.16)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+printMask = 0x100
+printMask = 0x102
+Linux->: ['hcitool', 'dev']
+Linux->: Devices:
+	hci0	90:E8:68:8B:5F:B8
